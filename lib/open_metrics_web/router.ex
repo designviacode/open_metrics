@@ -18,6 +18,11 @@ defmodule OpenMetricsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    live "/light", LightLive
+    live "/counter", CounterLive
+    live "/pricing", PricingSliderLive
+    live "/metrics", MetricsDashboardLive
   end
 
   # Other scopes may use custom stacks.

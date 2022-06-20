@@ -118,3 +118,29 @@
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+body {
+  background: #383a59;
+}
+
+.gradient-border {
+  border-width: 10px 0 0;
+  border-top-style: solid;
+  -o-border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.gradient-text {
+  margin: 0;
+  background: linear-gradient(136.23deg,#ff80bf -2.25%,#9580ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.content {
+  padding: 2rem;
+}
