@@ -18,7 +18,7 @@ defmodule OpenMetricsWeb.PricingSliderLive do
   end
 
   def render(assigns) do
-    ~L"""
+    ~H"""
       <div>
         <h1>Pricing</h1>
 
@@ -55,7 +55,7 @@ defmodule OpenMetricsWeb.PricingSliderLive do
             min="1"
             max="10"
             name="seats"
-            value=<%= @seats %>
+            value={{@seats}}
           />
         </form>
         <h1>Total: <%= number_to_currency(@amount) %> / monthly</h1>

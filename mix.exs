@@ -50,7 +50,9 @@ defmodule OpenMetrics.MixProject do
       {:faker, "~> 0.17.0"},
       {:number, "~> 1.0"},
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
-      {:swoosh, "~> 1.3"}
+      {:swoosh, "~> 1.3"},
+      {:tesla, "~> 1.4"},
+      {:hackney, "~> 1.17"}
     ]
   end
 
