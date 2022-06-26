@@ -23,6 +23,7 @@ defmodule OpenMetricsWeb.Router do
     live "/counter", CounterLive
     live "/pricing", PricingSliderLive
     live "/metrics", MetricsDashboardLive
+    live "/metrics/settings", MetricsSettingsLive
   end
 
   # Other scopes may use custom stacks.
