@@ -5,7 +5,7 @@ defmodule OpenMetricsWeb.MetricsDashboardLive do
 
   def mount(_params, _session, socket) do
     if connected?(socket) do
-      :timer.send_interval(1000, self(), :tick)
+      :timer.send_interval(20000, self(), :tick)
     end
 
     socket = assign_stats(socket)
